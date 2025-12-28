@@ -1,7 +1,0 @@
-Öğrenci Adı Soyadı: [Adınız Soyadınız]
-Proje Linki: [Railway Deploy Linkiniz Buraya Gelecek]
-
-Not:
-1. Dockerfile ve pom.xml Railway deployment için hazırdır.
-2. Mongo URI environment variable olarak eklenmelidir.
-3. Kullanıcı adı: 'admin', Şifre: 'admin123' (Veritabanından manuel role='admin' yapmanız gerekebilir veya ilk kayıtta yetki verebilirsiniz).
