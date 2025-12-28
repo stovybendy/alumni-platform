@@ -80,4 +80,22 @@ public class VideosServlet extends HttpServlet {
             resp.sendRedirect("video?id=" + mediaId);
         }
     }
+    private String extractVideoId(String url) {
+        if (url == null) return "";
+        String videoId = url;
+        if (url.contains("v=")) {
+            int index = url.indexOf("v=");
+            videoId = url.substring(index + 2);
+            if (videoId.contains("&")) {
+                videoId = videoId.substring(0, videoId.indexOf("&"));
+            }
+        } else if (url.contains("youtu.be/")) {
+            int index = url.indexOf("youtu.be/");
+            videoId = url.substring(index + 9);
+             if (videoId.contains("?")) {
+                videoId = videoId.substring(0, videoId.indexOf("?"));
+            }
+        }
+        return videoId;
+    }
 }
