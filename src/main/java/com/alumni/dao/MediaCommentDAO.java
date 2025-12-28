@@ -27,7 +27,7 @@ public class MediaCommentDAO {
 
     public List<ProfileComment> getCommentsForMedia(String targetId) {
         List<ProfileComment> comments = new ArrayList<>();
-        commentCollection.find(Filters.eq("targetUserId", new ObjectId(targetId))) // reusing targetUserId field for mediaId
+        commentCollection.find(Filters.eq("targetUserId", new ObjectId(targetId)))
                 .sort(Sorts.descending("timestamp"))
                 .into(comments);
         return comments;

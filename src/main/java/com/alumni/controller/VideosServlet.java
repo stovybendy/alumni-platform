@@ -58,7 +58,10 @@ public class VideosServlet extends HttpServlet {
             String desc = req.getParameter("description");
             MediaItem item = new MediaItem();
             item.setType("video");
-            item.setUrl(url);
+            
+            String videoId = extractVideoId(url);
+            item.setUrl(videoId);
+            
             item.setDescription(desc);
             item.setTimestamp(new Date());
             mediaDAO.addMedia(item);

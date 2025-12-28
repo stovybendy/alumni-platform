@@ -4,7 +4,7 @@
     </jsp:include>
 
     <div class="glass-panel" style="max-width: 400px; margin: 4rem auto; padding: 2rem;">
-        <h2 style="text-align: center; margin-bottom: 2rem;">Tekrar Kavuştuk</h2>
+        <h2 style="text-align: center; margin-bottom: 2rem;">Kullanıcı Girişi</h2>
 
         <% String error=(String) request.getAttribute("error"); %>
             <% if (error !=null) { %>
