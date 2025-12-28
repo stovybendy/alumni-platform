@@ -18,7 +18,7 @@
                     </iframe>
                 </div>
             </div>
-
+ 
             <div class="glass-panel" style="padding: 2rem;">
                 <h3>Yorumlar</h3>
                 <form action="videos" method="post" style="margin: 1rem 0;">
