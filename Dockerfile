@@ -12,8 +12,8 @@ RUN mvn clean package -DskipTests
 FROM tomcat:10.1-jdk17
 # Remove default webapps
 RUN rm -rf /usr/local/tomcat/webapps/*
-# Copy the built WAR from the build stage
-COPY --from=build /app/target/alumni-platform.war /usr/local/tomcat/webapps/ROOT.war
+# Copy the built WAR from the build stage (use wildcard to be safe)
+COPY --from=build /app/target/*.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
