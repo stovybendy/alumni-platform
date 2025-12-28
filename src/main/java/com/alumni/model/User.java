@@ -9,8 +9,8 @@ public class User {
     @BsonId
     private ObjectId id;
     private String username;
-    private String password; // Hashed
-    private String role; // "user" or "admin"
+    private String password;
+    private String role; // admin veya user
     
     private String firstName;
     private String lastName;
@@ -26,11 +26,10 @@ public class User {
     private String twitterHandle;
     private String webAddress;
     
-    private String profilePhotoUrl; // For thumbnails
+    private String profilePhotoUrl;
 
     public User() {}
 
-    // Getters and Setters
     public ObjectId getId() { return id; }
     public void setId(ObjectId id) { this.id = id; }
 
