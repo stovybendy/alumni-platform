@@ -11,7 +11,6 @@
                 <p style="color: var(--text-muted);">Düşüncelerinizi paylaşın.</p>
             </div>
 
-            <!-- Create Post Form -->
             <div class="glass-panel" style="padding: 1.5rem; margin-bottom: 2rem;">
                 <form action="forum" method="post">
                     <div class="form-group">
