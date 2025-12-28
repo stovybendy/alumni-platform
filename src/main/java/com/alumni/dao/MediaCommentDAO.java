@@ -1,10 +1,6 @@
 package com.alumni.dao;
 
 import com.alumni.model.ProfileComment; 
-// Reusing ProfileComment class structure since fields are identical (targetId, author, content, time)
-// In a real app I'd rename it to 'Comment' but strict separation is fine too. 
-// Actually, let's just make a new simple class inside logic or reuse. 
-// To avoid confusion, I'll use ProfileComment but map it to 'media_comments'.
 import com.alumni.util.DatabaseManager;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.model.Filters;
