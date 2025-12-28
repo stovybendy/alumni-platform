@@ -19,8 +19,7 @@ public class DatabaseManager {
         if (database == null) {
             String connectionString = System.getenv("MONGO_URI");
             if (connectionString == null || connectionString.isEmpty()) {
-                // Mongo bağlantısı kısmı
-                connectionString = "mongodb+srv://metin2epostam2_db_user:v2v0IBfkMrKJUxk0@mytestcluster.x3hjwzu.mongodb.net/?appName=MyTestCluster";
+                throw new RuntimeException("MONGO_URI environment variable is not set!");
             }
 
             CodecRegistry pojoCodecRegistry = fromProviders(PojoCodecProvider.builder().automatic(true).register("com.alumni.model").build());
