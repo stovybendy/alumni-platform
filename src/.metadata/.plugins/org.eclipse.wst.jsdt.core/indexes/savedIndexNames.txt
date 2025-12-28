@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\gorke\.gemini\antigravity\scratch\alumni-platform\src\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+411268877.index
+37168781.index
+584637497.index
+1182101612.index
+4258210912.index
+1644297148.index
